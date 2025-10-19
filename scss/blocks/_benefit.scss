@@ -1,0 +1,76 @@
+.benefit {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  min-height: 480px;
+  padding: 20px;
+  background-size: cover;
+  border: 2px solid $color-white;
+
+  @include vp-1023{
+    width: 100%;
+    min-height: 400px;
+  }
+
+  &--round-all {
+    border-radius: 180px;
+  }
+
+  &--apartment {
+    background-image: url("../../images/photo-1.jpg");
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../../images/photo-1@2x.jpg");
+    }
+  }
+
+  &--pond {
+    background-image: url("../../images/photo-2.jpg");
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../../images/photo-2@2x.jpg");
+    }
+
+  }
+
+  &--entrance {
+    background-image: url("../../images/photo-3.jpg");
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../../images/photo-3@2x.jpg");
+    }
+  }
+
+  &__number {
+    margin: 0 0 16px;
+    font-size: 80px;
+    font-family: $ff-ardeco;
+    line-height: 60px;
+
+    @include vp-1023{
+      font-size: 60px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 24px;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include vp-1023{
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  &__icon{
+    width: 50px;
+  }
+}
