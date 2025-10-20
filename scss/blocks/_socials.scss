@@ -7,6 +7,10 @@
   padding: 0;
   list-style-type: none;
 
+  @include vp-1023{
+    column-gap: 60px;
+  }
+
   &__link {
     display: flex;
     color: $color-white-20;

@@ -9,6 +9,11 @@
     line-height: 140px;
     color: $color-fun-blue;
     letter-spacing: -0.02em;
+
+    @include vp-1023{
+      font-size: 120px;
+      line-height: 100px;
+    }
   }
 
   &__heading {
@@ -19,6 +24,11 @@
     line-height: 50px;
     color: $color-fun-blue;
     text-transform: uppercase;
+
+    @include vp-1023{
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   &__content {
@@ -27,6 +37,11 @@
     justify-content: space-between;
     align-items: center;
     grid-template-columns: 315px 360px;
+
+    @include vp-1023{
+      grid-template-columns: 252px 300px;
+      column-gap: 176px;
+    }
   }
 
   &__list {
@@ -36,6 +51,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @include vp-1023{
+      row-gap: 28px;
+    }
   }
 
   &__list-item {
@@ -51,6 +70,11 @@
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: -0.025em;
+
+    @include vp-1023{
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__link--active {
