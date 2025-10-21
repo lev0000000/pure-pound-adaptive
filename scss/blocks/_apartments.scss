@@ -13,6 +13,12 @@
       grid-template-columns: 340px 300px;
       align-items: start;
     }
+
+    @include vp-767{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
   }
 
   &__icon {

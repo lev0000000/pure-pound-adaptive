@@ -12,6 +12,12 @@
       column-gap: 88px;
       grid-template-columns: 300px 340px;
     }
+
+    @include vp-767{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
   }
 
   &__content {

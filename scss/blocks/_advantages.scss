@@ -14,6 +14,10 @@
       font-size: 120px;
       line-height: 100px;
     }
+
+    @include vp-767{
+      text-align: center;
+    }
   }
 
   &__heading {
@@ -29,6 +33,10 @@
       font-size: 40px;
       line-height: 40px;
     }
+
+    @include vp-767{
+      text-align: center;
+    }
   }
 
   &__content {
@@ -41,6 +49,10 @@
     @include vp-1023{
       grid-template-columns: 252px 300px;
       column-gap: 176px;
+    }
+
+    @include vp-767{
+      grid-area: auto;
     }
   }
 
@@ -55,6 +67,8 @@
     @include vp-1023{
       row-gap: 28px;
     }
+
+  
   }
 
   &__list-item {
