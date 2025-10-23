@@ -47,6 +47,7 @@
     @include vp-767{
       font-size: 36px;
       line-height: 34px;
+      margin-bottom: 16px;
     }
   }
 
@@ -68,6 +69,10 @@
 
   &__text {
     margin: 0 0 16px;
+
+    @include vp-767{
+      margin: 0 0 12px;
+    }
   }
 
   &__list {
@@ -81,6 +86,10 @@
       margin-bottom: 28px;
       padding-left: 12px;
       width: 100%;
+    }
+
+    @include vp-767{
+      margin-bottom: 24px;
     }
   }
 
@@ -98,10 +107,17 @@
     @include vp-767{
       font-size: 12px;
       line-height: 18px;
+      height: 32px;
+      gap: 8px;
     }
   }
 
   &__link-icon {
     pointer-events: none;
+
+    @include vp-767{
+      width: 100%;
+      height: 100%;
+    }
   }
 }

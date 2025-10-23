@@ -11,6 +11,10 @@
     column-gap: 60px;
   }
 
+  @include vp-767{
+    column-gap: 32px;
+  }
+
   &__link {
     display: flex;
     color: $color-white-20;

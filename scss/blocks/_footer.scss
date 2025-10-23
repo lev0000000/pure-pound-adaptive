@@ -2,6 +2,10 @@
   padding: 39px 0 40px;
   border-top: 1px solid $color-white-10;
 
+  @include vp-767{
+    padding: 32px 0 24px;
+  }
+
   &__wrapper,
   &__box {
     display: flex;
@@ -19,6 +23,12 @@
     @include vp-1023{
       margin-bottom: 40px;
     }
+
+    @include vp-767{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
   }
 
   &__socials {
@@ -27,6 +37,10 @@
     @include vp-1023{
       margin-bottom: 40px;
     }
+
+    @include vp-767{
+      margin-bottom: 28px;
+    }
   }
 
   &__left,
@@ -34,6 +48,10 @@
     row-gap: 10px;
     display: flex;
     flex-direction: column;
+
+    @include vp-767{
+      display: none;
+    }
   }
 
   &__left {
@@ -126,6 +144,10 @@
     
     @include vp-1023{
       margin-bottom: 28px;
+    }
+
+    @include vp-767{
+      display: none;
     }
   }
 
