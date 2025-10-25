@@ -88,6 +88,14 @@
     }
   }
 
+  &--privacy{
+    background-image: url("../../images/pound-photo.png");
+
+    @media (min-resolution:2dppx) {
+      background-image: url("../../images/pound-photo@2x.png");
+    }
+  }
+
   &__number {
     margin: 0 0 16px;
     font-size: 80px;
@@ -115,6 +123,7 @@
     @include vp-1023{
       font-size: 18px;
       line-height: 20px;
+      margin-bottom: 20px;
     }
 
     @include vp-767{

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__left">
+                <a class="header__home-link" href="#" aria-label="Вернуться на главную страницу">
+                    <svg class="header__home-icon" width="28" height="28" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-home"></use>
+                    </svg>
+                </a>
+                <span class="header__text">
+                    Коротко о&nbsp;проекте
+                </span>
+            </div>
+            <a class="header__logo-link" href="#">
+                <svg class="header__logo-image" width="204" height="88" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <div class="header__right">
+                <a class="header__language-link" href="#">
+                    En
+                </a>
+                <a class="header__favorites-link" href="#" aria-label="Открыть избранное">
+                    <svg class="header__favorites-icon" width="28" height="28" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-favorite"></use>
+                    </svg>
+                </a>
+                <button class="header__btn" type="button">
+                    Выбрать квартиру
+                </button>
+                <a class="header__phone" href="tel:+74951812960">
+                    <span class="header__phone-link">+7&nbsp;495&nbsp;181 29&nbsp;60</span>
+                    <svg class="header__phone-icon" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-call"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper-griding">
+                    <h2 class="hero__heading">тишина и приватность</h2>
+                    <p class="hero__text">Дом расположен в престижном районе Москвы, в 50 метрах от знаменитого пруда и
+                        бульвара, одного из самых романтичных мест столицы.</p>
+                </div>
+            </div>
+            <div class="hero__img-wrapper">
+                <picture>
+                    <source media="(max-width:767px)"
+                        srcset="images/bg-privacy-page.jpg 1x, images/bg-privacy-page@2x.jpg 2x">
+                    <source media="(max-width:1023px)" srcset="images/bg-table.jpg 1x, images/bg-table@2x.jpg 2x">
+                    <img class="hero__image" src="images/bg-privacy-page.jpg" srcset="images/bg-privacy-page@2x.jpg 2x"
+                        width="1440" height="760" alt="Передний план клубного дома">
+                </picture>
+            </div>
+        </section>
+        <section class="privacy">
+            <div class="container">
+                <div class="privacy__top">
+                    <svg class="privacy__top-icon" width="60" height="10" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-curve"></use>
+                    </svg>
+                    <p class="privacy__top-desc">Здание стоит в тихом Потаповском переулке, в глубине квартала,
+                        и представляет собой приватное пространство.</p>
+                </div>
+                <div class="privacy__wrapper">
+                    <div class="privacy__content">
+                        <h2 class="privacy__heading">
+                            ПО-НАСТОЯЩЕМУ
+                            УНИКАЛЕН
+                        </h2>
+                        <p class="privacy__text">
+                            Мы создали по-настоящему приватное пространство для наших жителей, островок тишины и
+                            комфорта посреди шумного мегаполиса.
+                        </p>
+                    </div>
+                    <div class="benefit benefit--privacy">
+                        <span class="benefit__number">
+                            50
+                        </span>
+                        <span class="benefit__text">
+                            Метров до&nbsp;пруда
+                        </span>
+                        <svg class="benefit__icon" width="60" height="10" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-curve"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="real-beauty real-beauty--grid">
+            <div class="container">
+                <h2 class="real-beauty__heading">
+                    Подлинная красота
+                </h2>
+                <p class="real-beauty__description">
+                    Дом представляет собой исторический особняк начала прошлого века. Мы&nbsp;бережно восстанавливаем
+                    его сложный
+                    фасад, используя дорогие материалы.
+                </p>
+            </div>
+            <div class="real-beauty__img-wrapper">
+                <picture>
+                    <source media="(max-width:767px)" srcset="images/bg2-mobile.jpg 1x, images/bg2-mobile@2x.jpg 2x">
+                    <source media="(max-width:1023px)" srcset="images/bg2-table.jpg 1x, images/bg2-table@2x.jpg 2x">
+                    <img class="real-beauty__image" src="images/bg-2.jpg" srcset="images/bg-2@2x.jpg" width="1440"
+                        height="700" alt="Вид сверху на клубный дом">
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
