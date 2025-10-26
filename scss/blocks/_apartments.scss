@@ -12,6 +12,10 @@
     align-items: center;
     grid-template-columns: 420px 360px;
 
+    &--reverse{
+      grid-template-columns: 360px 420px;
+    }
+
     @include vp-1023{
       column-gap: 88px;
       grid-template-columns: 340px 300px;

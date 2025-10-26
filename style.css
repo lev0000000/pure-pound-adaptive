@@ -666,6 +666,9 @@ a {
   align-items: center;
   grid-template-columns: 420px 360px;
 }
+.apartments__wrapper--reverse {
+  grid-template-columns: 360px 420px;
+}
 @media (max-width: 1023px) {
   .apartments__wrapper {
     -moz-column-gap: 88px;
@@ -783,8 +786,40 @@ a {
     margin: 0 auto;
   }
 }
+.benefit--square-all {
+  border-radius: unset;
+  border: none;
+}
+.benefit--bg-all {
+  width: 100%;
+  border: none;
+}
+.benefit--size-xl {
+  background-image: url("../../images/bg-privacy-page2.jpg");
+}
+@media (min-resolution: 2dppx) {
+  .benefit--size-xl {
+    background-image: url("../../images/bg-privacy-page2@2x.jpg");
+  }
+}
+.benefit--around-side {
+  background-image: url("../../images/apartment-photo.png");
+}
+@media (min-resolution: 2dppx) {
+  .benefit--around-side {
+    background-image: url("../../images/apartment-photo@2x.png");
+  }
+}
 .benefit--round-all {
   border-radius: 180px;
+}
+.benefit--round-privacy {
+  background-image: url("../../images/techno-photo.png");
+}
+@media (min-resolution: 2dppx) {
+  .benefit--round-privacy {
+    background-image: url("../../images/techno-photo@2x.png");
+  }
 }
 .benefit--apartment {
   background-image: url("../../images/photo-1.jpg");
@@ -914,6 +949,18 @@ a {
   .real-beauty {
     padding: 60px 0 0;
   }
+}
+.real-beauty__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 118px;
+}
+.real-beauty__wrapper--reverse {
+  flex-direction: row-reverse;
+}
+.real-beauty__text-block {
+  width: 340px;
 }
 .real-beauty__heading {
   max-width: 480px;

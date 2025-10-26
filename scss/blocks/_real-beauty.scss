@@ -5,6 +5,21 @@
     padding: 60px 0 0
   }
 
+  &__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 118px;
+
+    &--reverse{
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__text-block{
+    width: 340px;
+  }
+
   &__heading {
     max-width: 480px;
     margin: 0 auto 24px;

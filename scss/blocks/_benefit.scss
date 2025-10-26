@@ -22,8 +22,42 @@
     margin: 0 auto;
   }
 
+  &--square-all{
+    border-radius: unset;
+    border: none;
+  }
+
+  &--bg-all{
+    width: 100%;
+    border: none;
+  }
+
+  &--size-xl{
+    background-image: url("../../images/bg-privacy-page2.jpg");
+
+    @media (min-resolution:2dppx){
+      background-image: url("../../images/bg-privacy-page2@2x.jpg");
+    }
+  }
+
+  &--around-side{
+    background-image: url("../../images/apartment-photo.png");
+
+    @media (min-resolution:2dppx){
+      background-image: url("../../images/apartment-photo@2x.png");
+    }
+  }
+
   &--round-all {
     border-radius: 180px;
+  }
+
+  &--round-privacy{
+    background-image: url("../../images/techno-photo.png");
+
+    @media (min-resolution:2dppx){
+      background-image: url("../../images/techno-photo@2x.png");
+    }
   }
 
   &--apartment {
