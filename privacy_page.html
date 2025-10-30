@@ -60,7 +60,8 @@
                 <picture>
                     <source media="(max-width:767px)"
                         srcset="images/bg-privacy-page.jpg 1x, images/bg-privacy-page@2x.jpg 2x">
-                    <source media="(max-width:1023px)" srcset="images/bg-table.jpg 1x, images/bg-table@2x.jpg 2x">
+                    <source media="(max-width:1023px)"
+                        srcset="images/bg-privacy-page-table.jpg 1x, images/bg-privacy-page-table@2x.jpg 2x">
                     <img class="hero__image" src="images/bg-privacy-page.jpg" srcset="images/bg-privacy-page@2x.jpg 2x"
                         width="1440" height="760" alt="Передний план клубного дома">
                 </picture>
@@ -108,10 +109,8 @@
                             двор-сад
                         </h2>
                         <p class="real-beauty__description">
-                            Дом представляет собой исторический особняк начала прошлого века. Мы&nbsp;бережно
-                            восстанавливаем
-                            его сложный
-                            фасад, используя дорогие материалы.
+                            Двор-сад закрыт для посторонних. Здесь нет автомобилей, магазинов, офисов, поэтому нет
+                            и посторонних. Окна всех квартир выходят в тихий московский двор.
                         </p>
                     </div>
                     <div class="benefit benefit--square-all benefit--around-side"></div>
@@ -134,9 +133,6 @@
             <div class="container">
                 <div class="apartments__wrapper apartments__wrapper--reverse">
                     <div class="benefit benefit--round-all benefit--round-privacy">
-                        <svg class="benefit__icon" width="60" height="10" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#icon-curve"></use>
-                        </svg>
                     </div>
                     <div class="apartments__content">
                         <h2 class="apartments__heading">технологии тишины</h2>
@@ -161,21 +157,18 @@
                 </div>
             </div>
         </section>
-        <section class="real-beauty real-beauty--grid">
+        <section class="real-beauty real-beauty--gaping">
             <div class="container">
-                <div class="real-beauty__wrapper real-beauty__wrapper-reverse">
+                <div class="real-beauty__wrapper real-beauty__wrapper--original">
                     <div class="real-beauty__text-block">
                         <h2 class="real-beauty__heading">
-                            Подлинная красота
+                            в доме царит тишина
                         </h2>
                         <p class="real-beauty__description">
-                            Дом представляет собой исторический особняк начала прошлого века. Мы&nbsp;бережно
-                            восстанавливаем
-                            его сложный
-                            фасад, используя дорогие материалы.
+                            Благодаря небольшому количеству жителей в доме царит тишина: в нём всего 34 квартиры, от двух до четырёх на этаже.
                         </p>
                     </div>
-                    <div class="benefit benefit--square-all benefit--around-side"></div>
+                    <div class="benefit benefit--square-all benefit--room"></div>
                 </div>
             </div>
         </section>
@@ -245,142 +238,144 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__content">
-                    <div class="footer__left">
-                        <span class="footer__text">
-                            Офис продаж
-                        </span>
-                        <p class="footer__address">
-                            Кадашёвская набережная, д. 6/1/2, стр.&nbsp;1, вход с&nbsp;набережной
-                        </p>
-                        <a class="footer__left-link" href="#">
-                            Построить маршрут
+    </main> 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__content">
+                        <div class="footer__left">
+                            <span class="footer__text">
+                                Офис продаж
+                            </span>
+                            <p class="footer__address">
+                                Кадашёвская набережная, д. 6/1/2, стр.&nbsp;1, вход с&nbsp;набережной
+                            </p>
+                            <a class="footer__left-link" href="#">
+                                Построить маршрут
+                            </a>
+                        </div>
+                        <a class="footer__logo-link" href="#" aria-label="Сайт клубного дома Чистые пруды">
+                            <svg class="footer__logo-image" width="78" height="95" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#logo-small"></use>
+                            </svg>
+                        </a>
+                        <div class="footer__right">
+                            <a class="footer__phone" href="tel:+74951812960">
+                                +7 (495) 256-21-47
+                            </a>
+                            <a class="footer__right-link" href="mailto:contact-center@sminex.com">
+                                contact-center@sminex.com
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="socials footer__socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" aria-label="Группа в Телеграм">
+                                <svg class="socials__icon" width="22" height="18" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-tg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" aria-label="Канал на Ютуб">
+                                <svg class="socials__icon" width="24" height="18" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" aria-label="Группа во ВКонтакте">
+                                <svg class="socials__icon" width="24" height="14" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" aria-label="Канал в Яндекс Дзен">
+                                <svg class="socials__icon" width="20" height="20" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-ya"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Коротко о&nbsp;проекте
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Динамика строительства
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Документы
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Рассрочка
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                O&nbsp;Sminex-Интеко
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-link" href="#">
+                                Правовая информация
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__copyright">
+                        Содержание настоящего сайта <a class="footer__copyright-first-link"
+                            href="https://chistye-prudy.ru">chistye-prudy.ru</a>, включая любую информацию
+                        и&nbsp;результаты
+                        интеллектуальной деятельности, принадлежит ООО &laquo;Специализированный застройщик
+                        &bdquo;Чистые
+                        пруды&ldquo;&raquo; (ИНН 9709054651) и&nbsp;защищено законодательством Российской Федерации
+                        и&nbsp;международными соглашениями. Любое использование, копирование, воспроизведение или
+                        распространение
+                        любой размещённой на&nbsp;настоящем сайте информации, материалов и/или их&nbsp;частей
+                        не&nbsp;допускается без
+                        предварительного получения согласия правообладателя. Сайт носит исключительно информационный
+                        характер
+                        и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями
+                        статьи 437
+                        Гражданского кодекса Российской Федерации. Проектная декларация на&nbsp;сайте <a
+                            class="footer__copyright-second-link" href="https://наш.дом.рф">наш.дом.рф</a>.
+                    </p>
+                    <div class="footer__inner">
+                        <a class="footer__map" href="#">
+                            Карта сайта
+                        </a>
+                        <a class="footer__inner-link" href="#" aria-label="Сайт компании Сминекс">
+                            <svg class="footer__inner-image" width="88" height="20" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#logo-sminex"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__company-link" href="#" aria-label="Сайт компании Вайтмарк">
+                            <svg class="footer__logo-image" width="86" height="14" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#logo-whitemark"></use>
+                            </svg>
                         </a>
                     </div>
-                    <a class="footer__logo-link" href="#" aria-label="Сайт клубного дома Чистые пруды">
-                        <svg class="footer__logo-image" width="78" height="95" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#logo-small"></use>
-                        </svg>
-                    </a>
-                    <div class="footer__right">
-                        <a class="footer__phone" href="tel:+74951812960">
-                            +7 (495) 256-21-47
-                        </a>
-                        <a class="footer__right-link" href="mailto:contact-center@sminex.com">
-                            contact-center@sminex.com
-                        </a>
-                    </div>
-                </div>
-                <ul class="socials footer__socials">
-                    <li class="socials__item">
-                        <a class="socials__link" href="#" aria-label="Группа в Телеграм">
-                            <svg class="socials__icon" width="22" height="18" aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#icon-tg"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="#" aria-label="Канал на Ютуб">
-                            <svg class="socials__icon" width="24" height="18" aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#icon-youtube"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="#" aria-label="Группа во ВКонтакте">
-                            <svg class="socials__icon" width="24" height="14" aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#icon-vk"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="#" aria-label="Канал в Яндекс Дзен">
-                            <svg class="socials__icon" width="20" height="20" aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#icon-ya"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Коротко о&nbsp;проекте
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Динамика строительства
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Новости
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Документы
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Рассрочка
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            O&nbsp;Sminex-Интеко
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Контакты
-                        </a>
-                    </li>
-                    <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">
-                            Правовая информация
-                        </a>
-                    </li>
-                </ul>
-                <p class="footer__copyright">
-                    Содержание настоящего сайта <a class="footer__copyright-first-link"
-                        href="https://chistye-prudy.ru">chistye-prudy.ru</a>, включая любую информацию и&nbsp;результаты
-                    интеллектуальной деятельности, принадлежит ООО &laquo;Специализированный застройщик &bdquo;Чистые
-                    пруды&ldquo;&raquo; (ИНН 9709054651) и&nbsp;защищено законодательством Российской Федерации
-                    и&nbsp;международными соглашениями. Любое использование, копирование, воспроизведение или
-                    распространение
-                    любой размещённой на&nbsp;настоящем сайте информации, материалов и/или их&nbsp;частей
-                    не&nbsp;допускается без
-                    предварительного получения согласия правообладателя. Сайт носит исключительно информационный
-                    характер
-                    и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями
-                    статьи 437
-                    Гражданского кодекса Российской Федерации. Проектная декларация на&nbsp;сайте <a
-                        class="footer__copyright-second-link" href="https://наш.дом.рф">наш.дом.рф</a>.
-                </p>
-                <div class="footer__inner">
-                    <a class="footer__map" href="#">
-                        Карта сайта
-                    </a>
-                    <a class="footer__inner-link" href="#" aria-label="Сайт компании Сминекс">
-                        <svg class="footer__inner-image" width="88" height="20" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#logo-sminex"></use>
-                        </svg>
-                    </a>
-                    <a class="footer__company-link" href="#" aria-label="Сайт компании Вайтмарк">
-                        <svg class="footer__logo-image" width="86" height="14" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#logo-whitemark"></use>
-                        </svg>
-                    </a>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

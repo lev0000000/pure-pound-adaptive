@@ -12,20 +12,29 @@
     align-items: center;
     grid-template-columns: 420px 360px;
 
-    &--reverse{
-      grid-template-columns: 360px 420px;
-    }
-
     @include vp-1023{
       column-gap: 88px;
       grid-template-columns: 340px 300px;
-      align-items: start;
     }
 
     @include vp-767{
       display: flex;
       flex-direction: column;
       gap: 32px;
+    }
+
+    &--reverse{
+      grid-template-columns: 360px 420px;
+
+      @include vp-1023{
+        grid-template-columns: 300px 340px;
+      }
+
+      @include vp-767{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
@@ -50,12 +59,26 @@
     line-height: 60px;
     text-transform: uppercase;
     margin: 0 0 24px;
+
+    @include vp-1023{
+      font-size: 46px;
+      line-height: 46px;
+      margin-bottom: 20px;
+    }
+
+    @include vp-767{
+      font-size: 36px;
+      line-height: 34px;
+      margin-bottom: 16px;
+    }
   }
 
   &__wrapper--reverse &__description:not(:last-child){
-    font-size: 16px;
-    line-height: 22px;
     margin-bottom: 16px;
+
+    @include vp-767{
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
@@ -73,6 +96,22 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper--reverse &__description{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+
+    @include vp-1023{
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767{
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 
@@ -101,6 +140,10 @@
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 16px;
+
+    @include vp-767{
+      margin-bottom: 12px;
+    }
   }
 
   &__list {

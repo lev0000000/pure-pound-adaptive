@@ -133,6 +133,16 @@
     color: $color-white-50;
     text-transform: uppercase;
     letter-spacing: -0.02em;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &:focus-visible {
+      outline: none;
+      color: $color-white;
+
+    }
   }
 
   &__copyright {

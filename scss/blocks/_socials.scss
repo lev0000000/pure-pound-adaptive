@@ -7,16 +7,25 @@
   padding: 0;
   list-style-type: none;
 
-  @include vp-1023{
+  @include vp-1023 {
     column-gap: 60px;
   }
 
-  @include vp-767{
+  @include vp-767 {
     column-gap: 32px;
   }
 
   &__link {
     display: flex;
     color: $color-white-20;
+
+    &:hover {
+      color: $color-white;
+    }
+
+    &:focus-visible {
+      outline: none;
+      color: $color-white;
+    }
   }
 }
