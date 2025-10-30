@@ -96,6 +96,22 @@
     @media (min-resolution:2dppx) {
       background-image: url("../../images/apartment-photo@2x.png");
     }
+
+    @media (max-width:$vp-tablet) {
+      background-image: url("../../images/apartment-photo-table.png");
+    }
+
+    @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
+      background-image: url("../../images/apartment-photo-table@2x.png");
+    }
+
+    @media (max-width:$vp-mobile) {
+      background-image: url("../../images/apartment-photo-mobile.png");
+    }
+
+    @media (max-width:$vp-mobile) and (min-resolution:2dppx) {
+      background-image: url("../../images/apartment-photo-mobile@2x.png");
+    }
   }
 
   &--round-all {
@@ -119,6 +135,22 @@
 
     @media (min-resolution:2dppx) {
       background-image: url("../../images/room-photo@2x.png");
+    }
+
+    @media (max-width:$vp-tablet) {
+      background-image: url("../../images/room-photo-table.png");
+    }
+
+    @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
+      background-image: url("../../images/room-photo-table@2x.png");
+    }
+
+    @media (max-width:$vp-mobile) {
+      background-image: url("../../images/room-photo-mobile@2x.png");
+    }
+
+    @media (max-width:$vp-mobile) and (min-resolution:2dppx) {
+      background-image: url("../../images/room-photo-mobile@2x.png");
     }
   }
 
@@ -214,6 +246,22 @@
 
     @media (min-resolution:2dppx) {
       background-image: url("../../images/pound-photo@2x.png");
+    }
+
+    @media (max-width:$vp-tablet){
+      background-image: url("../../images/pound-photo-table.png");
+    }
+
+    @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
+      background-image: url("../../images/pound-photo-table@2x.png");
+    }
+
+    @media (max-width:$vp-mobile) {
+      background-image: url("../../images/room-photo-mobile.png");
+    }
+
+    @media (max-width:$vp-mobile) and (min-resolution:2dppx) {
+      background-image: url("../../images/pound-photo-mobile@2x.png");
     }
   }
 
