@@ -52,7 +52,7 @@
 
     @include vp-767 {
       min-height: 200px;
-      padding: 50px;
+      padding: 46px 0 50px;
     }
 
     
@@ -319,7 +319,11 @@
   }
 
   &__icon {
-    width: 50px;
+    width: 60px;
+
+    @include vp-1023{
+      width: 50px;
+    }
   }
 
 

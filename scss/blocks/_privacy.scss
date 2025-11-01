@@ -1,7 +1,7 @@
 .privacy {
   padding: 80px 0 0;
 
-  @include vp-767{
+  @include vp-767 {
     padding: 60px 0 0;
   }
 
@@ -12,23 +12,24 @@
     align-items: center;
     grid-template-columns: 360px 420px;
 
-    @include vp-1023{
+    @include vp-1023 {
       column-gap: 88px;
       grid-template-columns: 300px 340px;
     }
 
-    @include vp-767{
+    @include vp-767 {
       display: flex;
       flex-direction: column;
       gap: 32px;
     }
 
-    &--xl{
-      grid-template-columns: 420px 360px;
+  }
 
-      @include vp-1023{
-        grid-template-columns: 340px 300px;
-      }
+  &--xl &__wrapper {
+    grid-template-columns: 420px 360px;
+
+    @include vp-1023 {
+      grid-template-columns: 340px 300px;
     }
   }
 
@@ -47,13 +48,13 @@
     line-height: 60px;
     text-transform: uppercase;
 
-    @include vp-1023{
+    @include vp-1023 {
       font-size: 46px;
       line-height: 46px;
       margin-bottom: 20px;
     }
 
-    @include vp-767{
+    @include vp-767 {
       font-size: 36px;
       line-height: 34px;
       margin-bottom: 16px;
@@ -65,12 +66,12 @@
     font-weight: 300;
     line-height: 22px;
 
-    @include vp-1023{
+    @include vp-1023 {
       font-size: 14px;
       line-height: 20px;
     }
 
-    @include vp-767{
+    @include vp-767 {
       font-size: 12px;
       line-height: 18px;
     }
@@ -79,12 +80,12 @@
   &__text {
     margin: 0 0 16px;
 
-    @include vp-767{
+    @include vp-767 {
       margin: 0 0 12px;
     }
   }
 
-  &__wrapper--xl &__text{
+  &--xl &__text {
     margin: 0;
   }
 
@@ -95,13 +96,13 @@
     margin: 0 0 32px;
     padding: 0 0 0 16px;
 
-    @include vp-1023{
+    @include vp-1023 {
       margin-bottom: 28px;
       padding-left: 12px;
       width: 95%;
     }
 
-    @include vp-767{
+    @include vp-767 {
       margin-bottom: 24px;
     }
   }
@@ -112,21 +113,21 @@
     align-items: center;
     line-height: 22px;
 
-    &:hover{
-      color:$color-polo-blue;
+    &:hover {
+      color: $color-polo-blue;
     }
 
-    &:focus-visible{
+    &:focus-visible {
       outline: none;
-      color:$color-polo-blue;
+      color: $color-polo-blue;
     }
 
-    @include vp-1023{
+    @include vp-1023 {
       font-size: 14px;
       line-height: 20px;
     }
 
-    @include vp-767{
+    @include vp-767 {
       font-size: 12px;
       line-height: 18px;
       height: 32px;
@@ -137,13 +138,13 @@
   &__link-icon {
     pointer-events: none;
 
-    @include vp-767{
+    @include vp-767 {
       width: 100%;
       height: 100%;
     }
   }
 
-  &__top{
+  &__top {
     width: 620px;
     display: flex;
     flex-direction: column;
@@ -152,32 +153,33 @@
     margin: 0 auto 80px;
     gap: 32px;
 
-    @include vp-767{
-        width: 100%;
-        gap: 24px;
-        margin-bottom: 60px;
-      }
-    
-    &-desc{
+    @include vp-767 {
+      width: 100%;
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    &-desc {
       font-size: 18px;
       line-height: 24px;
       font-family: $ff-montserrat;
       text-align: center;
       margin: 0;
-      @include vp-1023{
+
+      @include vp-1023 {
         font-size: 16px;
         line-height: 22px;
       }
 
-      @include vp-767{
+      @include vp-767 {
         font-size: 14px;
         line-height: 20px;
       }
     }
 
-    &-icon{
+    &-icon {
 
-      @include vp-1023{
+      @include vp-1023 {
         width: 50px;
       }
     }

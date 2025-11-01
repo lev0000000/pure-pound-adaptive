@@ -15,6 +15,7 @@
     @include vp-1023{
       column-gap: 88px;
       grid-template-columns: 340px 300px;
+      align-items: start;
     }
 
     @include vp-767{
@@ -22,12 +23,14 @@
       flex-direction: column;
       gap: 32px;
     }
+  }
 
-    &--reverse{
-      grid-template-columns: 360px 420px;
+  &--reverse &__wrapper{
+    grid-template-columns: 360px 420px;
 
       @include vp-1023{
         grid-template-columns: 300px 340px;
+        align-items: center;
       }
 
       @include vp-767{
@@ -35,7 +38,6 @@
         flex-direction: column;
         align-items: center;
       }
-    }
   }
 
   &__icon {
@@ -73,7 +75,7 @@
     }
   }
 
-  &__wrapper--reverse &__description:not(:last-child){
+  &--reverse &__description:not(:last-child){
     margin-bottom: 16px;
 
     @include vp-767{
@@ -99,7 +101,7 @@
     }
   }
 
-  &__wrapper--reverse &__description{
+  &--reverse &__description{
     font-size: 16px;
     line-height: 22px;
     font-weight: 300;
@@ -115,7 +117,7 @@
     }
   }
 
-  &__wrapper--reverse &__text:last-child{
+  &--reverse &__text:last-child{
     margin-bottom: 0;
   }
 
@@ -136,7 +138,7 @@
     }
   }
 
-  &__wrapper--reverse &__list{
+  &--reverse &__list{
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 16px;
