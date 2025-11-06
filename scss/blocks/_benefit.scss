@@ -22,98 +22,6 @@
     margin: 0 auto;
   }
 
-  &--square-all {
-    border-radius: unset;
-    border: none;
-    width: 420px;
-    min-height: 500px;
-
-    @include vp-1023 {
-      width: 270px;
-      min-height: 320px;
-    }
-
-    @include vp-767 {
-      width: 345px;
-      min-height: 410px;
-    }
-  }
-
-  &--bg-all {
-    width: 100%;
-    min-height: 700px;
-    border: none;
-    padding-top: 185px;
-
-    @include vp-1023 {
-      min-height: 374px;
-      padding-top: 90px;
-    }
-
-    @include vp-767 {
-      min-height: 200px;
-      padding: 46px 0 50px;
-    }
-
-    
-  }
-
-  &--bg-all &__icon {
-    width: 60px;
-
-    @include vp-1023 {
-      width: 50px;
-    }
-  }
-
-  &--size-xl {
-    background-image: url("../../images/bg-privacy-page2.jpg");
-
-    @media (min-resolution:2dppx) {
-      background-image: url("../../images/bg-privacy-page2@2x.jpg");
-    }
-
-    @media (max-width:$vp-tablet) {
-      background-image: url("../../images/bg-privacy-page-table2.jpg");
-    }
-
-    @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
-      background-image: url("../../images/bg-privacy-page-table2@2x.jpg");
-    }
-
-    @media (max-width:$vp-mobile) {
-      background-image: url("../../images/privacy-page-mobile2.jpg");
-    }
-
-    @media (max-width:$vp-mobile) and (min-resolution:2dppx){
-      background-image: url("../../images/privacy-page-mobile@2x.jpg");
-    }
-  }
-
-  &--around-side {
-    background-image: url("../../images/apartment-photo.png");
-
-    @media (min-resolution:2dppx) {
-      background-image: url("../../images/apartment-photo@2x.png");
-    }
-
-    @media (max-width:$vp-tablet) {
-      background-image: url("../../images/apartment-photo-table.png");
-    }
-
-    @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
-      background-image: url("../../images/apartment-photo-table@2x.png");
-    }
-
-    @media (max-width:$vp-mobile) {
-      background-image: url("../../images/apartment-photo-mobile.png");
-    }
-
-    @media (max-width:$vp-mobile) and (min-resolution:2dppx) {
-      background-image: url("../../images/apartment-photo-mobile@2x.png");
-    }
-  }
-
   &--round-all {
     border-radius: 180px;
 
@@ -130,110 +38,94 @@
     }
   }
 
-  &--room {
-    background-image: url("../../images/room-photo.png");
-
-    @media (min-resolution:2dppx) {
-      background-image: url("../../images/room-photo@2x.png");
-    }
-
-    @media (max-width:$vp-tablet) {
-      background-image: url("../../images/room-photo-table.png");
-    }
-
-    @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
-      background-image: url("../../images/room-photo-table@2x.png");
-    }
-
-    @media (max-width:$vp-mobile) {
-      background-image: url("../../images/room-photo-mobile@2x.png");
-    }
-
-    @media (max-width:$vp-mobile) and (min-resolution:2dppx) {
-      background-image: url("../../images/room-photo-mobile@2x.png");
-    }
-  }
-
   &--round-privacy {
-    background-image: url("../../images/techno-photo.png");
+    background-image: url("../../images/apartments/techno-photo.png");
 
     @media (min-resolution:2dppx) {
-      background-image: url("../../images/techno-photo@2x.png");
+      background-image: url("../../images/apartments/techno-photo@2x.png");
     }
 
     @media (max-width:$vp-tablet) {
-      background-image: url("../../images/techno-photo-table.png");
+      background-image: url("../../images/apartments/techno-photo-table.png");
     }
 
     @media(max-width:$vp-mobile) and (min-resolution:2dppx){
-      background-image: url("../../images/techno-photo-table@2x.png");
+      background-image: url("../../images/apartments/techno-photo-table@2x.png");
     }
 
     @media (max-width:$vp-mobile) {
-      background-image: url("../../images/techno-photo-mobile.png");
+      background-image: url("../../images/apartments/techno-page-mobile.png");
     }
 
     @media(max-width:$vp-mobile) and (min-resolution:2dppx){
-      background-image: url("../../images/techno-photo-mobile@2x.png");
+      background-image: url("../../images/apartments/techno-photo-mobile@2x.png");
     }
     
   }
 
   &--apartment {
-    background-image: url("../../images/photo-1.jpg");
+    background-image: url("../../images/apartments/photo-1.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/photo-1@2x.jpg");
+      background-image: url("../../images/apartments/photo-1@2x.jpg");
     }
 
     @include vp-1023 {
-      background-image: url("../../images/photo-1-table.png");
+      background-image: url("../../images/apartments/photo-1-table.png");
 
       @media (min-resolution:2dppx) {
-        background-image: url("../../images/photo-1-table@2x.png");
+        background-image: url("../../images/apartments/photo-1-table@2x.png");
       }
     }
 
     @include vp-767 {
-      background-image: url("../../images/photo-1-mobile.png");
+      background-image: url("../../images/apartments/photo-1-mobile.png");
 
       @media (min-resolution:2dppx) {
-        background-image: url("../../images/photo-1-mobile@2x.png");
+        background-image: url("../../images/apartments/photo-1-mobile@2x.png");
       }
     }
 
   }
 
   &--pond {
-    background-image: url("../../images/photo-2.jpg");
+    background-image: url("../../images/privacy/photo-2.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/photo-2@2x.jpg");
+      background-image: url("../../images/privacy/photo-2@2x.jpg");
     }
 
     @include vp-1023 {
-      background-image: url("../../images/photo-2-table.png");
+      background-image: url("../../images/privacy/photo-2-table.png");
 
       @media (min-resolution:2dppx) {
-        background-image: url("../../images/photo-2-table@2x.png");
+        background-image: url("../../images/privacy/photo-2-table@2x.png");
       }
     }
 
     @include vp-767 {
-      background-image: url("../../images/photo-2-mobile.png");
+      background-image: url("../../images/privacy/photo-2-mobile@2x.png");
 
       @media (min-resolution:2dppx) {
-        background-image: url("../../images/photo-2-mobile@2x.png");
+        background-image: url("../../images/privacy/photo-2-mobile.png");
       }
     }
 
   }
 
   &--entrance {
-    background-image: url("../../images/photo-3.jpg");
+    background-image: url("../../images/advantages/photo-3.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/photo-3@2x.jpg");
+      background-image: url("../../images/advantages/photo-3@2x.jpg");
+    }
+
+    @include vp-1023{
+      background-image: url("../../images/advantages/photo-3-table.png");
+
+      @media (min-resolution:2dppx){
+        background-image: url("../../images/advantages/photo-3-table@2x.png");
+      }
     }
 
     @include vp-767 {
@@ -242,26 +134,26 @@
   }
 
   &--privacy {
-    background-image: url("../../images/pound-photo.png");
+    background-image: url("../../images/privacy/pound-photo.png");
 
     @media (min-resolution:2dppx) {
-      background-image: url("../../images/pound-photo@2x.png");
+      background-image: url("../../images/privacy/pound-photo@2x.png");
     }
 
     @media (max-width:$vp-tablet){
-      background-image: url("../../images/pound-photo-table.png");
+      background-image: url("../../images/privacy/pound-photo-table.png");
     }
 
     @media (max-width:$vp-tablet) and (min-resolution:2dppx) {
-      background-image: url("../../images/pound-photo-table@2x.png");
+      background-image: url("../../images/privacy/pound-photo-table@2x.png");
     }
 
     @media (max-width:$vp-mobile) {
-      background-image: url("../../images/room-photo-mobile.png");
+      background-image: url("../../images/privacy/pound-photo-mobile.png");
     }
 
     @media (max-width:$vp-mobile) and (min-resolution:2dppx) {
-      background-image: url("../../images/pound-photo-mobile@2x.png");
+      background-image: url("../../images/privacy/pound-photo-mobile@2x.png");
     }
   }
 
@@ -277,13 +169,6 @@
     }
 
     @include vp-767 {
-      font-size: 56px;
-      line-height: 50px;
-    }
-  }
-
-  &--bg-all &__number {
-    @include vp-1023 {
       font-size: 56px;
       line-height: 50px;
     }
@@ -308,13 +193,6 @@
       margin-bottom: 20px;
       text-wrap: nowrap;
 
-    }
-  }
-
-  &--bg-all &__text {
-    @include vp-1023 {
-      font-size: 16px;
-      line-height: 18px;
     }
   }
 
